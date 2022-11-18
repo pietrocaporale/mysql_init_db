@@ -4,26 +4,23 @@
 -->
 <?php
 error_reporting(E_ALL);
-$path = "";
-error_reporting(E_ALL);
-require_once $path . 'param.php';
+require_once 'param.php';
 $param = new param();
 $db1_name="links";
-require_once $path . 'dbTablesDb1.php';
+require_once 'dbTablesDb1.php';
 $dbTablesDb1 = new dbTablesDb1();
 $db2_name="links2";
-require_once $path . 'dbTablesDb2.php';
+require_once 'dbTablesDb2.php';
 $dbTablesDb2 = new dbTablesDb2();
-
-
-require_once $path . 'dbPdo.php';
+require_once 'dbPdo.php';
 $mySql = new DbPdo($param->host, $param->user, $param->dbpass);
 
 ?>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Web page links control</title>
+        <title>MySql init db</title>
+        <link rel="icon" href="favicon.ico" />
         <style>
             html, body {
                 min-height: 100%;
