@@ -22,12 +22,12 @@ class param {
         if ($this->server_name == "127.0.0.1" || $this->server_name == "localhost") {
             $this->user = "root";
             $this->dbname = "links";
-            $this->dbpass = "a27b11c1962d15e15f";
+            $this->dbpass = "xxx";
             error_reporting(E_ALL);
         } else {
             $this->user = "username";
             $this->dbname = "links";
-            $this->dbpass = "";
+            $this->dbpass = "xxx";
             error_reporting(0);
         }
 
